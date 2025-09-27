@@ -2,7 +2,7 @@ class Student:
     def __init__(self, name, student_id):
         self.name = name
         self.student_id = student_id
-        self.grades = []  # список оценок
+        self.grades = []  #список оценок
     
     def add_grade(self, grade):
         #Проверка что оценка от 0 до 10
@@ -25,7 +25,7 @@ class Student:
         return f"Студент {self.name} (ID: {self.student_id})"
     
     def __eq__(self, other):
-        # Сравнение по ID студента
+        #Сравнение по ID студента
         return self.student_id == other.student_id
     
     def __len__(self):
