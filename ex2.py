@@ -5,9 +5,9 @@ class Person:
 
 class Teacher(Person):
     def __init__(self, name, age, subject):
-        super().__init__(name, age)  # наследуем от Person
+        super().__init__(name, age)  #наследуем от Person
         self.subject = subject
-        self.students = []  # список студентов
+        self.students = []  #список студентов
     
     def add_student(self, student):
         if student not in self.students:
@@ -22,7 +22,7 @@ class Teacher(Person):
         for student in self.students:
             print(f"- {student.name}")
 
-# Тестирование
+#Тестирование
 teacher = Teacher("Мария Петровна", 45, "Математика")
 student1 = Student("Иван Иванов", "001")
 student2 = Student("Петр Сидоров", "002")
